@@ -43,8 +43,13 @@
 <ol>
 <li><p><a href="https://arxiv.org/pdf/2304.06767" target=&ldquo;blank&rdquo;>RAFT: Reward rAnked FineTuning for Generative Foundation Model Alignment</a> <br />
 (α-β) Hanze Dong*, Wei Xiong*,  Deepanshu Goyal, Yihan Zhang, Winnie Chow, Rui Pan, Shizhe Diao, Jipeng Zhang, Kashun Shum and Tong Zhang, Preprint.<br /> 
-An alternative alignment algorithm for generative models (LLMs and diffusion model) based on reward ranking and supervised fine-tuning: fast, robust, and memory-efficient.
+An alternative alignment algorithm for generative models (LLMs and diffusion model) based on reward ranking and supervised fine-tuning. From a high level, RAFT iteratively learns (in an offline learning manner) from the best-of-n policy. As the training is offline and based on supervised learning, it is fast, robust, and memory-efficient (only loading one model at a time). Meanwhile, due to the clear learning objective (the best-of-n policy), one may monitor the filtered dataset to mitigate the reward hacking issue.
 <br /><br /></p>
+</li>
+<li><p><a href="https://arxiv.org/abs/2306.12420" target=&ldquo;blank&rdquo;>LMFlow: An Extensible Toolkit for Finetuning and Inference of Large Foundation Models</a> <br />
+Shizhe Diao, Rui Pan, Hanze Dong, Ka Shun Shum, Jipeng Zhang, Wei Xiong, Tong Zhang, Preprint.<br />
+LMFlow is a framework that allows developing LLMs (fine-tuning, inference, RLHF&hellip;) with minimal cost and effort. I was responsible for developing the RLHF part of the project. LMFlow received 7K+ star in github.
+<br /> <br /></p>
 </li>
 <li><p><a href="masterthesis.pdf" onclick="javascript:urchinTracker('/downloads/slidegfarl.pdf');">Master thesis: A Sufficient Condition of Sample-Efficient Reinforcement Learning with General Function Approximation </a><br />
 An introduction to the eluder coefficient, and also a new confidence-set-free algorithmic framework based on optimism, optimization oracle.
