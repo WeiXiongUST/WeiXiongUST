@@ -35,12 +35,18 @@
 <div class="infoblock">
 <div class="blocktitle">News</div>
 <div class="blockcontent">
+<p>We formulate the real-world RLHF process as a reverse-KL regularized contextual bandits and study its theoretical property by proposing statistically efficient algorithms with finite-sample theoretical guarantee. We also connect our theoretical findings with practical algorithms (e.g. DPO, RSO), offering new tools and insights for the algorithmic design of alignment algorithms. Chekc out our <a href="https://arxiv.org/abs/2312.11456" target=&ldquo;blank&rdquo;>technical report</a>. </a>.</p>
 <p>We develop a non-PPO-based alignment algorithm for foundation generative models, Reward rAnked FineTuning (RAFT), which is based on reward ranking and fine-tuning. Here is a <a href="https://arxiv.org/pdf/2304.06767.pdf" target=&ldquo;blank&rdquo;>technical report</a>. Also see a <a href="https://optimalscale.github.io/LMFlow/examples/raft.html" target=&ldquo;blank&rdquo;>detailed tutorial</a>.</p>
 <p>Our project <a href="https://github.com/OptimalScale/LMFlow" target=&ldquo;blank&rdquo;>LMFlow</a> is released! LMFlow is a framework that allows developing LLMs (fine-tuning, inference, RLHF&hellip;) with minimal cost and effort. We hope that LMFlow will enable more creative and diverse applications of LLMs and foster a wider community of LLM enthusiasts!</p>
 </div></div>
 <h2>Selected Projects</h2>
 <p>(α-β) means that the order is decided by rock-paper-scissors and (*) denotes equal contribution.</p>
 <ol>
+<li><p><a href="https://arxiv.org/abs/2312.11456" target=&ldquo;blank&rdquo;>Gibbs Sampling from Human Feedback: A Provable KL- constrained Framework for RLHF</a> <br />
+Wei Xiong*, Hanze Dong*, Chenlu Ye*, Han Zhong, Nan Jiang, Tong Zhang, Preprint. <br /> 
+We formulate the real-world RLHF process as a reverse-KL regularized contextual bandits and study its theoretical property by proposing statistically efficient algorithms with finite-sample theoretical guarantee. We also connect our theoretical findings with practical algorithms (e.g. DPO, RSO), offering new tools and insights for the algorithmic design of alignment algorithms.
+<br /><br /></p>
+</li>
 <li><p><a href="https://arxiv.org/pdf/2304.06767" target=&ldquo;blank&rdquo;>RAFT: Reward rAnked FineTuning for Generative Foundation Model Alignment</a> <br />
 (α-β) Hanze Dong*, Wei Xiong*,  Deepanshu Goyal, Yihan Zhang, Winnie Chow, Rui Pan, Shizhe Diao, Jipeng Zhang, Kashun Shum and Tong Zhang, TMLR. <br /> 
 An alternative alignment algorithm for generative models (LLMs and diffusion model) based on reward ranking and supervised fine-tuning. From a high level, RAFT iteratively learns (in an offline learning manner) from the best-of-n policy. As the training is offline and based on supervised learning, it is fast, robust, and memory-efficient (only loading one model at a time). Meanwhile, due to the clear learning objective (the best-of-n policy), one may monitor the filtered dataset to mitigate the reward hacking issue.
