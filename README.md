@@ -6,3 +6,4 @@ Previously, I have spent time on the mathematical foundation of RL, where I was 
 
 You can find more information about me at:
 - https://weixiongust.github.io/WeiXiongUST/index.html
+- https://scholar.google.com/citations?user=m2-OwQEAAAAJ&hl=zh-CN
