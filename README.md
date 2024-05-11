@@ -1,6 +1,6 @@
 ### Hi there 👋
 
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=WeiXiongUST_private=true)
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=WeiXiongUST&count_private=true)
 
 I am Wei Xiong, currently a first-year Ph.D. student in computer science at UIUC. I work on RLHF for aligning language models. 
 
