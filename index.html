@@ -44,50 +44,49 @@
 <ol>
 <li><p><a href="https://arxiv.org/abs/2405.07863" target=&ldquo;blank&rdquo;>RLHF Workflow: From Reward Modeling to Online RLHF</a> [<a href="https://github.com/RLHFlow/Online-RLHF" target=&ldquo;blank&rdquo;>Code</a>] <br /> 
 (α-β) Hanze Dong*, Wei Xiong*, Bo Pang*, Haoxiang Wang*, Han Zhao, Yingbo Zhou, Nan Jiang, Doyen Sahoo, Caiming Xiong, Tong Zhang, Technical Report <br /> 
-We present an open-source recipe to do online RLHF and make the state-of-the-art chatbot. <br /><br /></p>
+An open-source recipe to do online RLHF and make the state-of-the-art reward models and chatbot. <br /><br /></p>
 </li>
 <li><p><a href="gshf.pdf" onclick="javascript:urchinTracker('/downloads/cv.pdf');">Iterative Preference Learning from Human Feedback: Bridging Theory and Practice for RLHF under KL-Constraint</a> <a href="sliderlhf.pdf" onclick="javascript:urchinTracker('/downloads/sliderlhf.pdf');">[Slide] </a> <br />
 Wei Xiong*, Hanze Dong*, Chenlu Ye*, Han Zhong, Nan Jiang, Tong Zhang, ICML 2024, also Oral Presentation at ICLR 2024 Workshop on Mathematical and Empirical Understanding of Foundation Models. <br /> 
-We formulate the real-world RLHF process as a reverse-KL regularized contextual bandits and establish the mathematical foundation of this process by proposing statistically efficient algorithms with finite-sample theoretical guarantee. With a reasonable approximation of some information-theoretical oracle, the results naturally lead to several new alignment algorithms, e.g., the iterative DPO and offline DPO with multi-step rejection sampling, which admit an impressive empirical performance and outperform existing strong baselines like DPO, and RSO in real-world LLM alignment experiments.
+Online iterative DPO; Mathematical foundation of RLHF as a KL-regularized contextual bandit.
 <br /><br /></p>
   </li>
 <li><p><a href="https://arxiv.org/pdf/2402.18571v1.pdf" target=&ldquo;blank&rdquo;>Arithmetic Control of LLMs for Diverse User Preferences: Directional Preference Alignment with Multi-Objective Rewards</a> <a href="sliderlhf.pdf" onclick="javascript:urchinTracker('/downloads/sliderlhf.pdf');">[Slide] </a> <br />
 Haoxiang Wang*, Yong Lin*, Wei Xiong*, Rui Yang, Shizhe Diao, Shuang Qiu, Han Zhao, Tong Zhang, ACL 2024 <br /> 
-We present a user-preference-aware alignment framework under the multi-objective reward formulation. Specifically, we embed the user information into the input space and optimize the user-preference-conditioned reward. When deploying the model, the user can arithmetically specify their desired trade-offs for their customized needs in an inference-friendly manner.
+A user-preference-aware alignmnet framework under multi-objective reward formulation.
 <br /><br /></p>
 </li>
 <li><p><a href="https://arxiv.org/pdf/2402.07314.pdf" target=&ldquo;blank&rdquo;>Online Iterative Reinforcement Learning from Human Feedback with General Preference Model </a> <a href="sliderlhf.pdf" onclick="javascript:urchinTracker('/downloads/sliderlhf.pdf');">[Slide] </a> <br />
 (α-β) Chenlu Ye*, Wei Xiong*, Yuheng Zhang*, Nan Jiang, Tong Zhang, Preprint. <br /> 
-We present an initial attempt to study the learnability of the KL-regularized NLHF framework, aiming to promote the development of reward-model-free preference learning under general preference oracle.
+Learnability of RLHF under general reward-model-free preference structure.
 <br /><br /></p>
 </li>
 <li><p><a href="https://arxiv.org/pdf/2309.06256.pdf" target=&ldquo;blank&rdquo;>Mitigating the Alignment Tax of RLHF</a> <br />
 (α-β) Yong Lin*, Hangyu Lin*, Wei Xiong*, Shizhe Diao*, Jianmeng Liu, Jipeng Zhang, Rui Pan, Haoxiang Wang, Wenbin Hu, Hanning Zhang, Hanze Dong, Renjie Pi, Han Zhao, Nan Jiang, Yuan Yao, Heng Ji, and Tong Zhang, Preprint. <br /> 
-We quantitatively study the alignment tax of popular RLHF algorithms including PPO, RAFT, and DPO and investigate various methods to alleviate the forgetting, including regularization, low-rank finetuning, data replay, reawrd regularization, and model averaging. We also propose adaptive model averaging, which is most competitive across different tasks of the benchmark.
+Model merge for mitigating alignment tax.
 <br /><br /></p>
 </li>
 <li><p><a href="https://arxiv.org/pdf/2304.06767" target=&ldquo;blank&rdquo;>RAFT: Reward rAnked FineTuning for Generative Foundation Model Alignment</a> <br />
 (α-β) Hanze Dong*, Wei Xiong*,  Deepanshu Goyal, Yihan Zhang, Winnie Chow, Rui Pan, Shizhe Diao, Jipeng Zhang, Kashun Shum and Tong Zhang, TMLR. <br /> 
-An alternative alignment algorithm for generative models (LLMs and diffusion model) based on reward ranking and supervised fine-tuning. From a high level, RAFT iteratively learns (in an offline learning manner) from the best-of-n policy. As the training is offline and based on supervised learning, it is fast, robust, and memory-efficient (only loading one model at a time). Meanwhile, due to the clear learning objective (the best-of-n policy), one may monitor the filtered dataset to mitigate the reward hacking issue.
+We propose RAFT to iteratively learn from best-of-n sampling. It is also known as rejection sampling fine-tuning.
 <br /><br /></p>
 </li>
 <li><p><a href="https://arxiv.org/abs/2306.12420" target=&ldquo;blank&rdquo;>LMFlow: An Extensible Toolkit for Finetuning and Inference of Large Foundation Models</a> <br />
 Shizhe Diao, Rui Pan, Hanze Dong, Ka Shun Shum, Jipeng Zhang, Wei Xiong, Tong Zhang, NAACL 2024 <br />
-LMFlow is a framework that allows developing LLMs (fine-tuning, inference, RLHF&hellip;) with minimal cost and effort, with 7K+ star in github. I was responsible for developing the RLHF part of the project.
+A framework to develop LLMs (fine-tuning, inference, RLHF&hellip;) with 8K+ star in github. I was responsible for developing the RLHF part of the project.
 <br /> <br /></p>
 </li>
 <li><p><a href="masterthesis.pdf" onclick="javascript:urchinTracker('/downloads/slidegfarl.pdf');">Master thesis: A Sufficient Condition of Sample-Efficient Reinforcement Learning with General Function Approximation </a><br />
-An introduction to the eluder coefficient, and also a new confidence-set-free algorithmic framework based on optimism, and optimization oracle, which is the counterpart of the posterior sampling framework in the original GEC paper and might be easier to approximate in practice.
+An introduction to eluder coefficient, and also a new confidence-set-free algorithmic framework based on optimism (long version accepted to NeurIPS).
 <br /> <br /></p>
 </li>
 <li><p><a href="https://arxiv.org/abs/2211.01962" target=&ldquo;blank&rdquo;>GEC: A Unified Framework for Interactive Decision Making in MDP, POMDP, and Beyond</a> <a href="slideonlinegfa.pdf" onclick="javascript:urchinTracker('/downloads/slidegfarl.pdf');">[Slide] </a><br />
 (α-β) Han Zhong*, Wei Xiong*, Sirui Zheng, Liwei Wang, Zhaoran Wang, Zhuoran Yang and Tong Zhang, Preprint.<br />
-A unified viewpoint of solvable decision-making problems: limited generalization in an online manner, and a reduction from interactive decision making to the offline supervised learning. Also a unified algorithmic framework for both posterior sampling and UCB algorithm. See my thesis for a more thorough illustration of the ideas. In contrast to the recent remarkable breakthrough of the decoupling technique (decoupling coefficient, and decision-estimation-coefficient), the framework is less general (eluder technique cannot even handle RELU...), but may be easier to approximate in practice with more intuitive algorithmic designs and achieves superior bound in model-free case. Interestingly, the newly proposed measures could be interpreted as a reduction to the online supervised learning, in contrast to the offline one of eluder coefficient.
-<br /> <br /></p>
+A unified viewpoint of solvable decision-making problems: limited generalization in an online manner, and a reduction from interactive decision making to the offline supervised learning. Also a unified algorithmic framework for both posterior sampling and UCB algorithm. 
 </li>
 <li><p><a href="https://arxiv.org/abs/2212.05949" target=&ldquo;blank&rdquo;>Corruption-Robust Algorithms with Uncertainty Weighting for Nonlinear Contextual Bandits and Markov Decision Processes</a> <br />
 Chenlu Ye, Wei Xiong, Quanquan Gu and Tong Zhang, <i>ICML</i> 2023.<br /> 
-An application of weighted regression in the face of adversarial corruptions: new weight design, and new techniques for controlling the sum of weight (counterpart of the elliptical potential lemmas).  
+Weighted regression in the face of adversarial corruptions: new weight design, and new techniques for controlling the sum of weight (counterpart of the elliptical potential lemmas).  
 <br /> <br /></p>
 </li>
 <li><p><a href="offlinelinearrl.pdf" onclick="javascript:urchinTracker('/downloads/cv.pdf');">Nearly Minimax Optimal Offline Reinforcement Learning with Linear Function Approximation: MDP and MG</a> <a href="slideoffline.pdf" onclick="javascript:urchinTracker('/downloads/slidegfarl.pdf');">[Slide] </a><br />
@@ -101,12 +100,12 @@ A unified algorithmic and analysis framework for decentralized variance-reductio
 </li>
 <li><p><a href="https://arxiv.org/abs/2110.14622" target=&ldquo;blank&rdquo;>Heterogeneous Multi-player Multi-armed Bandits: Closing the Gap and Generalization</a>  [<a href="https://github.com/ShenGroup/MPMAB_BEACON" target=&ldquo;blank&rdquo;>Code</a>] <br /> 
 Chengshuai Shi, Wei Xiong, Cong Shen, and Jing Yang, <i>NeurIPS</i>, 2021.<br />
-We develop a new algorithm BEACON with batch exploration and a carefully crafted communication strategy. BEACON achieves the minimax-optimal regret bound and also impressive empirical performance.
+A new algorithm BEACON with batch exploration and a carefully crafted communication strategy: minimax-optimal regret bound and also impressive empirical performance.
 <br /> <br /></p>
 </li>
 </ol>
 <h2>Misc</h2>
-<p>I often learn by copying books&hellip;</p>
+<p>I take notes while learning &hellip;</p>
 <p><a href="note_exp.pdf" onclick="javascript:urchinTracker('/downloads/cv.pdf');">1 Note on exponential inequality</a></p>
 <p><a href="note_entropy.pdf" onclick="javascript:urchinTracker('/downloads/cv.pdf');">2 Note on metric entropy</a></p>
 <p><a href="note_stability.pdf" onclick="javascript:urchinTracker('/downloads/cv.pdf');">3 An alternative analysis of high-probability generalization bound for uniformly stable algorithms</a></p>
