@@ -30,17 +30,31 @@
 <p><td align="left"><p>Email: wx13 AT illinois DOT edu <br /></p> 
 <p><a href="cv.pdf" onclick="javascript:urchinTracker('/downloads/cv.pdf');">[Curriculum Vitae]</a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="https://scholar.google.com/citations?user=m2-OwQEAAAAJ&amp;hl=zh-CN" target=&ldquo;blank&rdquo;>[Google Scholar]</a></p>
 </td></tr></table>
-<p>I am currently a first-year Ph.D. student in computer science at UIUC, working with <a href="http://tongzhang-ml.org/" target=&ldquo;blank&rdquo;>Prof. Tong Zhang</a> and <a href="http://nanjiang.cs.illinois.edu" target=&ldquo;blank&rdquo;>Prof. Nan Jiang</a>. I also concurrently work with <a href="https://deepmind.google" target=&ldquo;blank&rdquo;>Google Deepmind</a> as a full-time/20% part-time student researcher since 2024.5. </a>.</p>
+<p>I am currently a first-year Ph.D. student in computer science at UIUC, working with <a href="http://tongzhang-ml.org/" target=&ldquo;blank&rdquo;>Prof. Tong Zhang</a> and <a href="http://nanjiang.cs.illinois.edu" target=&ldquo;blank&rdquo;>Prof. Nan Jiang</a>. I also concurrently work with <a href="https://deepmind.google" target=&ldquo;blank&rdquo;>Google Deepmind</a> as a full-time/20% part-time student researcher since 2024.5. </a>q</p>
 <p>Prior to this, I received a master's degree in mathematics in 2023 from The Hong Kong University of Science and Technology, where my study was supported by the Hong Kong PhD Fellowship. I enjoyed several fabulous years at the University of Science and Technology of China and obtained a B.S. in mathematics in 2021, where I worked closely with <a href="http://www.ece.virginia.edu/~cs7dt/home.html" target=&ldquo;blank&rdquo;>Prof. Cong Shen</a>. I worked as a research intern at the deep reinforcement learning team in <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-asia/" target=&ldquo;blank&rdquo;>Microsoft Research Asia</a>.</p>  
 <h2>Research Interests</h2>
-<p>I study the post-training of LLMs, with a focus on reinforcement learning from human feedback (RLHF). Previously, I have spent time on the mathematical foundation of RL, where I was fortunate to collaborate with many great senior mentors and talented peers. I also spent time on deep RL at Microsoft Research Asia. </p>
-<p>My primary research goal is to develop practical and theoretically sound algorithms and make these techniques accessible to the community.</p>  
-<div class="infoblock">
-<div class="blocktitle">News</div>
-<div class="blockcontent">
-<p>We formulate the real-world RLHF process as a reverse-KL regularized contextual bandits and study its theoretical property by proposing statistically efficient algorithms with finite-sample theoretical guarantee. We also connect our theoretical findings with practical algorithms (e.g. DPO, RSO), offering new tools and insights for the algorithmic design of alignment algorithms. Check out our <a href="https://arxiv.org/abs/2312.11456" target=&ldquo;blank&rdquo;>technical report</a>. </a>.</p>
-</div></div>
-
+<p>My research lies at the intersection of machine learning and decision making problems. The long-term goal of my research is to build strong agents that can make adaptive decisions tailored to dynamic contexts and specified criteria.</p> 
+<p>The recent breakthroughs in foundation large language models (LLMs) have further sparked my passion to develop LLM-based agent. I seek to understand the mathematical principle behind the problems, develop scalable and efficient algorithms from the underlying theoretical insights, and make these techniques available to the community. I list some representative research problems and projects here.
+<ol>
+<li><p><a href="https://arxiv.org/abs/2405.07863" target=&ldquo;blank&rdquo;>RLHF Workflow: From Reward Modeling to Online RLHF</a> [<a href="https://github.com/RLHFlow/Online-RLHF" target=&ldquo;blank&rdquo;>Code</a>] <br /> 
+(α-β) Hanze Dong*, Wei Xiong*, Bo Pang*, Haoxiang Wang*, Han Zhao, Yingbo Zhou, Nan Jiang, Doyen Sahoo, Caiming Xiong, Tong Zhang, Technical Report <br /> 
+An open-source recipe to do online RLHF and make the state-of-the-art reward models and chatbot. <br /><br /></p>
+</li>
+<li><p><a href="https://arxiv.org/pdf/2406.12845" target=&ldquo;blank&rdquo;>Interpretable Preferences via Multi-Objective Reward Modeling and Mixture-of-Experts </a> [<a href="https://huggingface.co/RLHFlow/ArmoRM-Llama3-8B-v0.1" target=&ldquo;blank&rdquo;>Model</a>] <br /> 
+Haoxiang Wang*, Wei Xiong*, Tengyang Xie, Han Zhao, Tong Zhang, Technical Report <br /> 
+A multi-head reward model with mixture-of-expert-style aggregation strategy. Best open-source RM of its class! <br /><br /></p>
+</li>
+<li><p><a href="gshf.pdf" onclick="javascript:urchinTracker('/downloads/cv.pdf');">Iterative Preference Learning from Human Feedback: Bridging Theory and Practice for RLHF under KL-Constraint</a> <a href="sliderlhf.pdf" onclick="javascript:urchinTracker('/downloads/sliderlhf.pdf');">[Slide] </a>  [<a href="https://github.com/RLHFlow/Online-RLHF" target=&ldquo;blank&rdquo;>Code</a>] <br />
+Wei Xiong*, Hanze Dong*, Chenlu Ye*, Han Zhong, Nan Jiang, Tong Zhang, ICML 2024, also Oral Presentation at ICLR 2024 Workshop on Mathematical and Empirical Understanding of Foundation Models. <br /> 
+Online iterative DPO; Mathematical foundation of RLHF as a KL-regularized contextual bandit.
+<br /><br /></p>
+  </li>
+<li><p><a href="https://arxiv.org/pdf/2402.18571v1.pdf" target=&ldquo;blank&rdquo;>Arithmetic Control of LLMs for Diverse User Preferences: Directional Preference Alignment with Multi-Objective Rewards</a> <a href="sliderlhf.pdf" onclick="javascript:urchinTracker('/downloads/sliderlhf.pdf');">[Slide] </a> [<a href="https://github.com/RLHFlow/Directional-Preference-Alignment" target=&ldquo;blank&rdquo;>Code</a>] <br />
+Haoxiang Wang*, Yong Lin*, Wei Xiong*, Rui Yang, Shizhe Diao, Shuang Qiu, Han Zhao, Tong Zhang, ACL 2024 <br /> 
+A user-preference-aware alignmnet framework under multi-objective reward formulation.
+<br /><br /></p>
+</li>
+</ol>
 <h2>Selected Projects</h2>
 <p>(α-β) means that the order is decided by rock-paper-scissors and (*) denotes equal contribution.</p>
 <ol>
