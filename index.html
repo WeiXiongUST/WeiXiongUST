@@ -52,7 +52,7 @@ We propose several complementary or alternative algorithms of Proximal Policy Op
 </ol>
 <li><p><b>Preference signal modeling</b><br /> 
 <ol>
-<li> We open-source a series of <a href="https://huggingface.co/sfairXC/FsfairX-LLaMA3-RM-v0.1" target=&ldquo;blank&rdquo;>Bradley-Terry reward model</a> and <a href="https://huggingface.co/RLHFlow/pair-preference-model-LLaMA3-8B" target=&ldquo;blank&rdquo;>pair-wise preference model</a>, which achieve state-of-the-art performance of their class, as evaluated by the <a href="https://huggingface.co/spaces/allenai/reward-bench" target=&ldquo;blank&rdquo;>Reward bench</a>. <br /><br /></p></li>
+<li> We open-source a series of <a href="https://huggingface.co/sfairXC/FsfairX-LLaMA3-RM-v0.1" target=&ldquo;blank&rdquo;>Bradley-Terry reward model</a> and <a href="https://huggingface.co/RLHFlow/pair-preference-model-LLaMA3-8B" target=&ldquo;blank&rdquo;>Generative pair-wise preference model</a>, which achieve state-of-the-art performance of their class, as evaluated by the <a href="https://huggingface.co/spaces/allenai/reward-bench" target=&ldquo;blank&rdquo;>Reward bench</a>. <br /><br /></p></li>
 <li> We study the <a href="https://huggingface.co/RLHFlow/ArmoRM-Llama3-8B-v0.1" target=&ldquo;blank&rdquo;>multi-head reward modeling</a> from different criterion like helpfulness, safety, and verbosity, as well as the algorithm design under this framework. We also develop a mixture-of-expert approach to aggregate the reward signals where a gating network decides the combination coefficient by the embedding of the prompt. Our resulting model, significantly outperforms competing models in its class with a more fine-grained reward signal, and approaches the performance of the much larger Nemotron-4 340B.<br /><br /></p></li>
 <li> The resulting models have received significant attention across industry and academic circles, with either public follow-up works or private communications with major entities such as Google, Microsoft Research, Amazon, Meta FAIR, as well as universities like KAIST, Northwestern, UIUC, and Princeton.</li>
 </ol>
@@ -79,6 +79,7 @@ We propose several complementary or alternative algorithms of Proximal Policy Op
 </li>
 <li><p><a href="slidemdpo.pdf" onclick="javascript:urchinTracker('/downloads/sliderlhf.pdf');">Building Math Agent by Iterative Preference Learning </a> <br /> 
 <ol>
+<li>Oct 2024, Talk at Informs Annual Meeting <br /></p></li>
 <li>Oct 2024, Talk at UIUC-NLP large group meeting <br /></p></li>
 <li>Aug 2024 Talk at Google Deepmind Sky Team, NYC<br /><br /></p></li>
 </ol>
