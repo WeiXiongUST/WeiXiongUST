@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
 <meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
-<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta http-equiv="Content-Type" content="text/html;charset=GBK" />
 <link rel="stylesheet" href="jemdoc.css" type="text/css" />
 <title>Wei Xiong</title>
 </head>
@@ -12,10 +12,9 @@
 <tr valign="top">
 <td id="layout-menu">
 <div class="menu-category">Home</div>
-<div class="menu-item"><a href="index.html">Home</a></div>
+<div class="menu-item"><a href="index.html" class="current">Home</a></div>
 <div class="menu-item"><a href="Bio.html">Biography</a></div>
-<div class="menu-item"><a href="blog.html">Blog</a></div>
-<div class="menu-item"><a href="research.html">Publication</a></div>
+<div class="menu-item"><a href="research.html">Research</a></div>
 <div class="menu-category">Miscellaneous</div>
 <div class="menu-item"><a href="Miscellaneous.html">Misc.</a></div>
 </td>
@@ -24,83 +23,168 @@
 <h1>Wei Xiong</h1>
 </div>
 <table class="imgtable"><tr><td>
-<img src="photo_gg.jpeg" alt="picture" width="250px" height="250px" />&nbsp;</td>
-<td align="left"><p>Ph.D. candidate<br /></p>
-<a href="https://cs.illinois.edu/" target=&ldquo;blank&rdquo;>University of Illinois Urbana-Champaign, Computer Science</a><br /></p>
-<p>Email: wx13 AT illinois DOT edu </a><br /></p>
-<p><a href="cv.pdf" onclick="javascript:urchinTracker('/downloads/cv.pdf');">[Curriculum Vitae]</a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="https://scholar.google.com/citations?user=m2-OwQEAAAAJ&amp;hl=zh-CN" target=&ldquo;blank&rdquo;>[Google Scholar]</a></p>
+<img src="photo_me.jpeg" alt="picture" width="250px" height="250px" />&nbsp;</td>
+<td align="left"><p>Ph.D. candidate<br />
+<a href="https://cs.illinois.edu/" target=&ldquo;blank&rdquo;>University of Illinois Urbana-Champaign, Computer Science</a><br />
+Email: wx13 AT illinois DOT edu<br /></p>
+<p><a href="cv.pdf" onclick="javascript:urchinTracker('/downloads/cv.pdf');">[Curriculum Vitae]</a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="https://scholar.google.com/citations?user=m2-OwQEAAAAJ&amp;hl=zh-CN" target=&ldquo;blank&rdquo;>Google Scholar</a></p>
 </td></tr></table>
-<p>I am currently a third-year Ph.D. candidate in computer science at UIUC, working with <a href="http://tongzhang-ml.org/" target=&ldquo;blank&rdquo;>Prof. Tong Zhang</a> and <a href="http://nanjiang.cs.illinois.edu" target=&ldquo;blank&rdquo;>Prof. Nan Jiang</a>. </a></p>
-<p>Prior to this, I received a master's degree in mathematics in 2023 from The Hong Kong University of Science and Technology, where my study was supported by the Hong Kong PhD Fellowship. I enjoyed several fabulous years at the University of Science and Technology of China and obtained a B.S. in mathematics in 2021, where I worked closely with <a href="http://www.ece.virginia.edu/~cs7dt/home.html" target=&ldquo;blank&rdquo;>Prof. Cong Shen</a>. I worked as a research intern at the deep reinforcement learning team in <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-asia/" target=&ldquo;blank&rdquo;>Microsoft Research Asia</a> from 2021.1 to 2021.6. I also worked with <a href="https://deepmind.google" target=&ldquo;blank&rdquo;>Google Deepmind</a> as a student researcher from 2024.5 to 2025.4 and worked as a research intern at Meta FAIR from 2025.5 to 2025.8.</p>  
-<h2>Research Interests</h2>
-<div class="infoblock">
-<div class="blocktitle">News</div>
-<div class="blockcontent">
-<p>I organize and co-found open-source projects to make the LLM post-training techniques more accessible to the community. See the projects <a href="https://github.com/RLHFlow" target=&ldquo;blank&rdquo;>RLHFlow</a> and <a href="https://github.com/OptimalScale/LMFlow" target=&ldquo;blank&rdquo;>LMFlow.</a> Also check the publication page for a full list of research papers, codes, and slides. <br /> </p>
-</div></div>
-<p>My research lies at the intersection of machine learning and decision making problems. The long-term goal of my research is to build strong agents that can make adaptive decisions tailored to dynamic contexts and specified criteria.</p> 
-<p>The recent breakthroughs in foundation large language models (LLMs) have further sparked my passion to develop LLM-based agent. I seek to understand the mathematical principle behind the problems, develop scalable and efficient algorithms from the underlying theoretical insights, and make these techniques available to the community. I list some representative research problems and projects here.
+<p>I am currently a third-year Ph.D. candidate in computer science at UIUC, working with <a href="http://tongzhang-ml.org/" target=&ldquo;blank&rdquo;>Prof. Tong Zhang</a> and <a href="http://nanjiang.cs.illinois.edu" target=&ldquo;blank&rdquo;>Prof. Nan Jiang</a>.</p>
+<p>Prior to this, I received a master's degree in mathematics in 2023 from The Hong Kong University of Science and Technology, where my study was supported by the Hong Kong PhD Fellowship. I enjoyed several fabulous years at the University of Science and Technology of China and obtained a B.S. in mathematics in 2021, where I worked closely with <a href="http://www.ece.virginia.edu/~cs7dt/home.html" target=&ldquo;blank&rdquo;>Prof. Cong Shen</a>.</p>
+<h2>Research Highlights</h2>
+<p>My research focuses on <i>reinforcement learning</i> (RL) and its applications in <i>LLM post-training</i>. I study both the <b>design of core RL algorithms</b> and the <b>development of practical training recipes</b>. I am also interested in understanding the training dynamics and the mathematical foundations underlying these methods, with the final goal of improving both the training stability and final model performance at scale. </p>
+<p>I take pride in deriving rigorous mathematical insights while also devoting substantial efforts to hands-on engineering, bridging the gap between theory and practice in pursuit of elegant and scalable algorithms. The high-level mathematical insights help ensure that our practical simplifications move in the right direction, while the engineering-intensive implementation has become an essential ingredient for the success of modern LLM projects.</p>
+<p>Some of my past work include: </p>
 <ol>
-<li><p><b>Algorithm designs in reinforcement learning from human feedback (RLHF)</b> <br /> 
-We propose several complementary or alternative algorithms of Proximal Policy Optimization (PPO) for the post-training of large language models, including [<a href="https://arxiv.org/pdf/2304.06767" target=&ldquo;blank&rdquo;>Iterative best-of-n fine-tuning</a>], [<a href="https://arxiv.org/pdf/2312.11456" target=&ldquo;blank&rdquo;>Iterative direct preference learning</a>], [<a href="https://arxiv.org/abs/2309.06256" target=&ldquo;blank&rdquo;>Adaptive Model Averaging</a>], and [<a href="https://arxiv.org/pdf/2409.02392" target=&ldquo;blank&rdquo;>Multi-turn direct alignment algorithms for agent learning</a>]. In particular, our studies are the first line of works to illustrate the power of iterative and on-policy direct preference learning, as compared to the offline counterparts. These algorithms are crucial components of the modern alignment frameworks adopted by projects such as LLaMA or Qwen. <br /> <br /></p>
+<li><p><i>Online rejection-sampling fine-tuning</i> <a href="https://arxiv.org/pdf/2505.02391">[3]</a><a href="https://arxiv.org/pdf/2304.06767">[13]</a>; <a href="https://github.com/RLHFlow/Minimal-RL">[Code]</a></p>
+<ol>
+<li><p>a widely used and competitive algorithm for Llama and Qwen post-training;</p>
 </li>
-<li><p><b>Mathematical principle of decision making porblems</b><br /> 
+<li><p>a practical recipe that competes with GRPO and provides theoretical understanding of GRPO through its connection to rejection sampling;</p>
+</li>
+<li><p>introduces an elegant inference-budget allocation strategy motivated by the variance-reduction principle in gradient estimation.</p>
+</li></ol>
+</li>
+<li><p><b><i>Reinforce-ada</i></b> <a href="https://arxiv.org/pdf/2510.04996">[1]</a>; <a href="https://github.com/RLHFlow/Reinforce-Ada">[Code]</a></p>
 <ol>
-<li>We make the first attempt to formally formulate the RLHF as a <a href="https://arxiv.org/pdf/2312.11456" target=&ldquo;blank&rdquo;>KL-regularized contextual bandit</a> (for Bradley-Terry model) and a <a href="https://arxiv.org/pdf/2402.07314" target=&ldquo;blank&rdquo;>KL-regularized two-player minimax game</a> (for general preference model). We investigate its learnability in three distinct settings—offline, online, and hybrid—and propose efficient algorithms with finite-sample theoretical guarantees. <br /><br /></p></li>
-<li> In [<a href="https://arxiv.org/pdf/2211.01962" target=&ldquo;blank&rdquo;>ZXZWWYZ22</a>] and [<a href="https://weixiongust.github.io/WeiXiongUST/masterthesis.pdf" target=&ldquo;blank&rdquo;>X23</a>], we show that the interactive decision-making problems can be reduced to a supervised online estimation, providing a unified understanding of Markov decision process (MDP), partially observable MDP, and two-player zero-sum Markov game. In particular, the widely adopted optimism principle serves to empower such a reduction and the complexity of the problem can be characterized by the cost of such a reduction. The framework covers nearly all known solvable interactive decision-making problems. This framework also leads to the development of a new optimization-based approach that achieves optimism through biased loss functions, offering an alternative to traditional constrained optimistic planning.<br /><br /></p></li>
-<li> In [<a href="https://arxiv.org/pdf/2205.15512" target=&ldquo;blank&rdquo;>XZSSWZ22</a>] and [<a href="https://arxiv.org/pdf/2202.07511" target=&ldquo;blank&rdquo;>ZXTWZWY22</a>], we conduct initial studies on what dataset permits solving offline multi-agent RL problems. While the single-agent setting benefits from covering the single distribution induced by the optimal policy, our research reveals that covering the Nash equilibrium is not sufficient and a much stronger condition is necessary for multi-agent scenarios, even for the simplest two-player zero-sum Markov game.</li>
-</ol>
-<li><p><b>Preference signal modeling</b><br /> 
+<li><p>my most recent work proposes a simple yet scalable adaptive sampling framework that continuously reallocates sampling effort toward prompts with the greatest uncertainty or learning potential, addressing the signal-loss problem in GRPO training.</p>
+</li></ol>
+</li>
+<li><p><i>Online DPO</i> <a href="https://arxiv.org/pdf/2312.11456">[10]</a> and <i>regret analysis of KL-regularized RL</i> <a href="https://arxiv.org/pdf/2502.07460">[4]</a><a href="https://arxiv.org/pdf/2312.11456">[10]</a><a href="https://proceedings.neurips.cc/paper_files/paper/2024/file/94d13c2401fe119e57ba325b6fe526e0-Paper-Conference.pdf">[14]</a>; <a href="https://github.com/RLHFlow/RLHF-Reward-Modeling">[Code1:Reward Modeling]</a> <a href="https://github.com/RLHFlow/Online-RLHF">[Code2:Online DPO]</a></p>
 <ol>
-<li> We open-source a series of <a href="https://huggingface.co/sfairXC/FsfairX-LLaMA3-RM-v0.1" target=&ldquo;blank&rdquo;>Bradley-Terry reward model</a> and <a href="https://huggingface.co/RLHFlow/pair-preference-model-LLaMA3-8B" target=&ldquo;blank&rdquo;>Generative pair-wise preference model</a>, which achieve state-of-the-art performance of their class, as evaluated by the <a href="https://huggingface.co/spaces/allenai/reward-bench" target=&ldquo;blank&rdquo;>Reward bench</a>. <br /><br /></p></li>
-<li> We study the <a href="https://huggingface.co/RLHFlow/ArmoRM-Llama3-8B-v0.1" target=&ldquo;blank&rdquo;>multi-head reward modeling</a> from different criterion like helpfulness, safety, and verbosity, as well as the algorithm design under this framework. We also develop a mixture-of-expert approach to aggregate the reward signals where a gating network decides the combination coefficient by the embedding of the prompt. Our resulting model, significantly outperforms competing models in its class with a more fine-grained reward signal, and approaches the performance of the much larger Nemotron-4 340B.<br /><br /></p></li>
-<li> The resulting models have received significant attention across industry and academic circles, with either public follow-up works or private communications with major entities such as Google, Microsoft Research, Amazon, Meta FAIR, as well as universities like KAIST, Northwestern, UIUC, and Princeton.</li>
-</ol>
-  </li>
-<li><p><b>Bringing the techniques to the community</b><br /> 
+<li><p>provides the first convergence and refined logarithmic regret analyses of KL-regularized RL(HF);</p>
+</li>
+<li><p>translates theoretical insights to propose online DPO;</p>
+</li>
+<li><p><b>the first open-source recipe of online DPO.</b></p>
+</li></ol>
+</li>
+<li><p>I co-found and lead the open-source RLHFlow project (2,000<tt> GitHub stars, 500 academic citations, 1M</tt> Hugging Face downloads) <a href="https://arxiv.org/pdf/2405.07863">[7]</a><a href="https://arxiv.org/pdf/2406.12845">[8]</a><a href="https://github.com/RLHFlow/RLHF-Reward-Modeling/tree/main/math-rm">[9]</a>.</p>
 <ol>
-<li> I initialize and organize the <a href="https://github.com/RLHFlow" target=&ldquo;blank&rdquo;>RLHFlow project</a>, which received >1K GitHub stars so far. We present a step by step guidance to do the post training of LLMs: supervised fine-tuning, reward modeling, and online iterative direct preference learning. Our training recipe is based only on the open-source dataset and the resulting model achieves state-of-the-art performance in its class. <br /><br /></p></li>
-<li> I am also a founding member and core contributor of the <a href="https://github.com/OptimalScale/LMFlow" target=&ldquo;blank&rdquo;>LMFlow project</a>, which received 8.2K GitHub stars so far. We present an extensible toolkit for finetuning and inference of LLMs. I am responsible for the RLHF part of the project. <br /><br /></p></li>
+<li><p>provides a complete post-training pipeline including SFT, reward modeling, and online DPO, <b>with final models outperforming Meta's Llama-3-8B-it</b>;</p>
+</li>
+<li><p>trained many widely used open-source BT reward models and preference models for RLHF;</p>
+</li>
+<li><p>introduced the <i>multi-head reward models</i> with <i>MoE-style aggregation</i> (ARMO <a href="https://arxiv.org/pdf/2406.12845">[8]</a>), which have contributed to the open-source community with 200+ citations;</p>
+</li>
+<li><p>released <b>the first open-source recipe of <i>(generative) process reward</i>.</b></p>
+</li>
 </ol>
-  </li>
+
+</li>
+</ol>
+<p>Some older work in learning theory </p>
+<ul>
+<li><p>Learnability and regret analysis in multi-agent Markov games <a href="https://arxiv.org/pdf/2205.15512">[i]</a> <a href="https://proceedings.mlr.press/v162/xiong22b/xiong22b.pdf">[ii]</a> <a href="https://proceedings.mlr.press/v162/zhong22b/zhong22b.pdf">[iii]</a></p>
+</li>
+<li><p>A unified viewpoint of learnability and generalization in online decision making <a href="https://arxiv.org/pdf/2211.01962">[iv]</a> <a href="https://weixiongust.github.io/WeiXiongUST/masterthesis.pdf">[v]</a> </p>
+</li>
+<li><p>Improved algorithm design and analysis in decentralized convex optimization <a href="https://arxiv.org/pdf/2012.15010">[vi]</a> </p>
+</li>
+</ul>
+<h2>Industry Experience</h2>
+<ul>
+<li><p><b>Research Intern, Meta FAIR</b>, 2025.5 to 2025.8</p>
+<ul>
+<li><p>Taught LLMs to segment reasoning trajectories into coherent intermediate steps, improving interpretability and stability of reasoning.</p>
+</li>
+<li><p>Trained a generative process reward model via RL to evaluate and guide step-by-step reasoning.</p>
+</li></ul>
+</li>
+<li><p><b>Student Researcher, Google Deepmind</b> (Gemini Post-Training Team), 2024.5 to 2025.4</p>
+<ul>
+<li><p>Formulated a multi-turn RL framework for agent tasks and developed a multi-turn variant of DPO for scalable online alignment. </p>
+</li>
+<li><p>Designed robust reward modeling techniques to mitigate reward hacking and improve reliability of RLHF training.</p>
+</li>
+<li><p>Contributed to internal thinking-LLM related projects.</p>
+</li></ul>
+</li>
+<li><p>Research Intern, Microsoft Research Asia from 2021.1 to 2021.6</p>
+<ul>
+<li><p>Developed RL-based bandwidth estimation algorithms for real-time communications in Microsoft Teams.</p>
+</li>
+<li><p>Conducted research on distributional reinforcement learning.</p>
+</li>
+</ul>
+
+</li>
+</ul>
+<h2>Honors and Awards</h2>
+<ol>
+<li><p><b>Google PhD Fellowship</b> ($85,000 USD per year), 2025</p>
+</li>
+<li><p>Best Paper Award, Demo Track, NAACL, 2024</p>
+</li>
+<li><p>NeurIPS Travel Award and Best Reviewer, 2023</p>
+</li>
+<li><p>Hong Kong PhD Fellowship Scheme (HKPFS) (approx. $90,000 USD over two years), 2021 - 2023</p>
+</li>
+<li><p><b>Guo Moruo Scholarship, Finalist</b> (Highest honor for undergraduates at USTC), 2020</p>
+</li>
 </ol>
 <h2>Service</h2>
-<p>Conference Reviewer: ICLR, NeurIPS, ICML, AISTATS, EMNLP </p>
-<p>Journal Reviewer: Journal of Machine Learning Research (JMLR), Springer Machine Learning Journal (ML), Transaction on Machine Learning Research (TMLR), Journal of the American Statistical Association (JASA). </p>
-<h2>Recent Talks</h2>
-<ol>
-<li><p><a href="silidesimons.pdf" onclick="javascript:urchinTracker('/downloads/sliderlhf.pdf');">Iterative Preference Learning for Large Language Model Post Training </a> <br /> 
-<ol>
-<li>Sep 2024 Talk at the Simons Institute Workshop: <a href="https://simons.berkeley.edu/workshops/emerging-generalization-settings" target=&ldquo;blank&rdquo;>Emerging Generalization Settings,  </a><br /></p></li>
-<li>Sep 2024 Talk at UIUC Machine Learning Seminar<br /></p></li>
-<li>Aug 2024 Talk at University of Waterloo<br /></p></li>
-<li>July 2024 Talk at Mila Alignment Seminar<br /><br /></p></li>
-</ol>
+<p><b>Conference Service</b></p>
+<ul>
+<li><p><b>Area Chair:</b> NeurIPS 2025 Workshop on Multi-Turn Interactions in Large Language Models.</p>
 </li>
-<li><p><a href="slidemdpo.pdf" onclick="javascript:urchinTracker('/downloads/sliderlhf.pdf');">Building Math Agent by Iterative Preference Learning </a> <br /> 
-<ol>
-<li>Jan 2025, Talk at UCLA Data Mining Group <br /></p></li>
-<li>Nov 2024, Talk at Amazon Rufus Group <br /></p></li>
-<li>Oct 2024, Talk at Informs Annual Meeting <br /></p></li>
-<li>Oct 2024, Talk at UIUC-NLP large group meeting <br /></p></li>
-<li>Aug 2024 Talk at Google Deepmind Sky Team, NYC<br /><br /></p></li>
-</ol>
+<li><p><b>Organizer:</b> NeurIPS 2025 Workshop on MATH-AI: The 5th Workshop on Mathematical Reasoning and AI.</p>
 </li>
-<li><p><a href="sliderlhf.pdf" onclick="javascript:urchinTracker('/downloads/sliderlhf.pdf');">Reinforcement Learning from Human Feedback: From Theory to Algorithm  </a> <br /> 
+<li><p><b>Reviewer:</b> ICLR (2024-2025), NeurIPS (2022-2024, <b>Top Reviewer Award (Top 8%) 2023</b>), ICML (2022-2023, 2025), AISTATS (2023-2025), ARR (2024-2025)</p>
+</li>
+</ul>
+<p><b>Journal Reviewer</b></p>
+<ul>
+<li><p>Journal of Machine Learning Research (JMLR), Transactions on Machine Learning Research (TMLR), Journal of the American Statistical Association (JASA)</p>
+</li>
+</ul>
+<h2>Service and Recent Talks</h2>
 <ol>
-<li>Dec 2024, Guest Lecture at University of Wisconsin-Madison for CS760 Machine Learning<br /></p></li>
-<li>Nov 2024, Guest Lecture at UVA for CS 4501 Natural Language Processing<br /></p></li>
-<li>June 2024 Talk at Google Multi-turn RLHF Workshop, MTV<br /></p></li>
-<li>May 2024 Talk at Google Learning Theory Seminar, NYC<br /></p></li>
-<li>Jan 2024 Talk at Microsoft Research Asia <br /><br /></p></li>
+<li><p><a href="silidesimons.pdf" onclick="javascript:urchinTracker('/downloads/sliderlhf.pdf');">Iterative Preference Learning for Large Language Model Post Training </a><br /></p>
+<ol>
+<li><p>Sep 2024 Talk at the Simons Institute Workshop: <a href="https://simons.berkeley.edu/workshops/emerging-generalization-settings" target=&ldquo;blank&rdquo;>Emerging Generalization Settings,</a></p>
+</li>
+<li><p>Sep 2024 Talk at UIUC Machine Learning Seminar</p>
+</li>
+<li><p>Aug 2024 Talk at University of Waterloo</p>
+</li>
+<li><p>July 2024 Talk at Mila Alignment Seminar<br /><br /></p>
+</li></ol>
+</li>
+<li><p><a href="slidemdpo.pdf" onclick="javascript:urchinTracker('/downloads/sliderlhf.pdf');">Building Math Agent by Iterative Preference Learning </a><br /></p>
+<ol>
+<li><p>Jan 2025, Talk at UCLA Data Mining Group</p>
+</li>
+<li><p>Nov 2024, Talk at Amazon Rufus Group</p>
+</li>
+<li><p>Oct 2024, Talk at Informs Annual Meeting</p>
+</li>
+<li><p>Oct 2024, Talk at UIUC-NLP large group meeting</p>
+</li>
+<li><p>Aug 2024 Talk at Google Deepmind Sky Team, NYC<br /><br /></p>
+</li></ol>
+</li>
+<li><p><a href="sliderlhf.pdf" onclick="javascript:urchinTracker('/downloads/sliderlhf.pdf');">Reinforcement Learning from Human Feedback: From Theory to Algorithm</a></p>
+<ol>
+<li><p>Dec 2024, Guest Lecture at University of Wisconsin-Madison for CS760 Machine Learning</p>
+</li>
+<li><p>Nov 2024, Guest Lecture at UVA for CS 4501 Natural Language Processing</p>
+</li>
+<li><p>June 2024 Talk at Google Multi-turn RLHF Workshop, MTV</p>
+</li>
+<li><p>May 2024 Talk at Google Learning Theory Seminar, NYC</p>
+</li>
+<li><p>Jan 2024 Talk at Microsoft Research Asia<br /><br /></p>
+</li>
 </ol>
+
 </li>
 </ol>
 <h2>Contact</h2>
-<p>If you are interested in discussing with me, feel free to drop me an email or add my wechat wei_xiong2000</p>
+<p>If you are interested in discussing with me, feel free to drop me an email or add my wechat wei_xiong2000 </p>
 <div id="footer">
 <div id="footer-text">
-Page generated 2023-08-04, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>.
+Page generated 2025-10-13, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>.
 </div>
 </div>
 </td>
@@ -108,6 +192,3 @@ Page generated 2023-08-04, by <a href="https://github.com/wsshin/jemdoc_mathjax"
 </table>
 </body>
 </html>
-
-
-
